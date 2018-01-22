@@ -24,17 +24,13 @@ class NewBudgetItem extends Component {
 
       componentWillMount(){
         axios.get(`/api/budget`).then(results=>{
-            console.log("results",results) 
-           this.setState({newList:results.data})
+            this.setState({newList:results.data})
       })}
 
       addItem(event){
-          console.log("test", event.target)
-        
         event.preventDefault();  
             axios.post('/api/budget',{category:this.state.category, item:this.state.item, cost:this.state.cost, date:this.state.date}).then(results=>{                   
                 axios.get(`/api/budget`).then(results=>{
-                    console.log("results",results) 
                     this.setState({newList:results.data})
             
           })})
@@ -43,21 +39,17 @@ class NewBudgetItem extends Component {
     remove(id){
         axios.delete('/api/budget/' + id).then(results=>{
             axios.get(`/api/budget`).then(results=>{
-                console.log("results",results) 
                 this.setState({newList:results.data})
   
      }) }) }
     increase(id){
         console.log(id)
-        axios.put('/api/budget/' + id,{button:this.state.increase}).then(results=>{
-            
+        axios.put('/api/budget/' + id,{button:this.state.increase}).then(results=>{            
                 this.setState({newList:results.data})
         }) } 
 
     decrease(id){
-        console.log(id)
         axios.put('/api/budget/' + id,{button:this.state.decrease}).then(results=>{
-            
                 this.setState({newList:results.data})
         }) } 
 

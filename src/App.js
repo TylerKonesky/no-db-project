@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './reset.css';
-// import Budget from './components/budget2';
 import SetBudget from './components/setbudget';
 import Names from "./components/name";
 import NewBudgetItem from "./components/newitems";
@@ -34,34 +33,7 @@ class App extends Component {
 
       <div className="main-body">
         <NewBudgetItem/>
-        {/* <div>
-          Category: 
-          <select>        
-            <option value="food">Food</option>
-            <option value="gas">Gas</option>
-            <option value="utilities">Utilities</option>
-            <option value="mortgage">Mortgage/Rent</option>
-            <option value="auto">Auto Expenses</option>
-            <option value="entertainment">Entertainment</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        <div>
-          Item: 
-          <input></input>
-        </div>
-        <div>
-          Cost:
-          <input></input>
-        </div>
-        <div>  
-          Date:
-          <input></input>
-        
-
-          <button className="budget-button">Submit</button>
-        </div>
-             */}
+       
       </div>
 
       <div>

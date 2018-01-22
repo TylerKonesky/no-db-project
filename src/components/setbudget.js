@@ -10,7 +10,7 @@ class SetBudget extends Component {
         super(props);
          
         this.state = {
-          budget:1000,
+          budget:0,
           newArr:[],
           
     

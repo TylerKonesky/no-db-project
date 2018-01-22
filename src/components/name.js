@@ -24,8 +24,7 @@ class Names extends Component {
 
                 <div className="header-left">
 
-                Tyler Konesky
-                
+                                
 
             </div>
 
