@@ -1,0 +1,152 @@
+
+.header{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: green;
+  height: 100px;
+  padding: 20px;
+  color: white;
+  position: fixed;
+  
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  
+}
+
+.header-left{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+  width: 33vw;
+ }
+
+.header-middle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  width: 33vw;
+  
+}
+
+.header-right{
+  color:black;
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 60px;
+  width: 33vw;
+  text-align: right;
+
+}
+.input-box{
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid black;
+  box-shadow: 5px solid black;
+  width: 15vw;
+  height: 20px;
+  z-index: 100;
+}
+.button{
+  font-weight: bold;
+  height: 25px;
+  border: 1px solid black;
+  margin-right: 20px;
+}
+
+.budget{
+
+  padding-top: 75px;
+  height: 100px;
+  width: 100vw;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  flex-direction: row;
+  
+  
+
+}
+
+.budget-input-box{
+  font-size: 15px;
+  border: 1px solid black;
+  box-shadow: 5px solid black;
+  width: 15vw;
+  height: 20px;
+  
+}
+.budget-button{
+  
+  margin-left: 10px;
+  font-weight: bold;
+  height: 25px;
+  border: 1px solid black;
+  
+}
+.set-budget{
+  padding-left: 10px;
+  font-size: 20px;
+  display: flex;
+  text-align: right;
+  margin-right: 20px;
+  height: 100px;
+  width: 30vw;
+  justify-content: flex-end;
+  
+  
+  
+
+}
+.budget-view{
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 55vw;
+  
+  text-align: right;
+}
+.budget-view span{
+  margin-top: 40px;
+  margin-right: 50px;
+  
+}
+
+.main-body{
+  padding-top: 150px;
+  font-weight: bolder;
+  border-bottom: 1px solid lightgray;
+  padding-left: 175px;
+  padding-right: 75px;
+ justify-content: space-between;
+ display: flex;
+ align-content: center;
+ 
+}
+.main-body-list{
+  padding: 10px;
+  font-weight: bolder;
+  border-bottom: 1px solid lightgray;
+  padding-left: 75px;
+  padding-right: 0px;
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  align-content: center;
+  
+  
+}
+
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
